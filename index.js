@@ -696,7 +696,7 @@ function Device(atemIpAddress){
 		const shortName = parseString(d.slice(22, 26));
 		const videoInterface = videoInterfaceNames[d[29]];
 		if (typeof videoInterface === 'undefined')
-			console.log('unknown video interface ' + d[29]);
+			// console.log('unknown video interface ' + d[29]);
 
 		/**
 		 * When the Source Configuration changes, for example: if the display name of input 2 changes, this event will be fired
